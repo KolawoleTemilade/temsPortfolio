@@ -24,10 +24,10 @@
       <i id="ham" class="fa-solid fas fa-bars"></i>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="#abt-sec">About</a></li>
           <li><a href="#project">Project</a></li>
-          <li> <a href="http://temmiekols.hashnode.dev">Blog</a></li>
+          <li><a href="http://temmiekols.hashnode.dev">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -67,16 +67,18 @@
     </section>
     <!-- ---------------------about section------------------- -->
     <div id="abt-sec">
-      <img src="./image/temilade-portfolio-img.png" alt="" />
+      <div class="abt-img">
+      <img src="./image/temilade-portfolio-img.png" alt="" width="100%" />
+     </div>
       <div class="about">
         <h2>About Me</h2>
         <p>
-          Hi, i'm Temilade.
-          I am a Frontend web Developer with a keen eye for design and a
-          commitment to creating seamless user experience. Proficient in HTML,
-          CSS, and JavaScript.I specialize in translating concepts into visually
-          appealing and functional websites.1 also seek opportunities to contribute
-          creativity and technical skills to innovative projects.
+          Hi, i'm Temilade. I am a Frontend web Developer with a keen eye for
+          design and a commitment to creating seamless user experience.
+          Proficient in HTML, CSS, and JavaScript.I specialize in translating
+          concepts into visually appealing and functional websites.1 also seek
+          opportunities to contribute creativity and technical skills to
+          innovative projects.
         </p>
         <div class="abt-btn">
           <a href="#contact"><button type="button">contact me</button></a>
@@ -110,35 +112,36 @@
       </div>
     </div>
     <!-- -----------------project section---------------- -->
-    <section id="project-sec">
-      <h1>
-        project
-      </h1>
+    <section id="project">
+      <h2>project</h2>
       <div class="projects">
-      <div class="pro1-card">
-        <div class="pro1-card-img"> 
-          <a href="  https://miskay-clone.netlify.app"><img src="./image/miskay-img.png" alt=""> </a>
+        <div class="pro1-card">
+          <div class="pro1-card-img">
+            <a href="  https://miskay-clone.netlify.app"
+              ><img src="./image/miskay-img.png" alt="" />
+            </a>
+          </div>
+          <h2>Cloned Miskay</h2>
         </div>
-        <h2> Cloned Miskay
-        </h2>
-      </div>
-      <div class="pro1-card">
-        <div class="pro1-card-img"> 
-          <a href="https://capable-bonbon-e73a5d.netlify.app/"><img src="./image/counter hook.png" alt=""> </a>
+        <div class="pro1-card">
+          <div class="pro1-card-img">
+            <a href="https://capable-bonbon-e73a5d.netlify.app/"
+              ><img src="./image/counter hook.png" alt="" />
+            </a>
+          </div>
+          <h2>counter hooks</h2>
         </div>
-        <h2> counter hooks
-        </h2>
-      </div>
-      <div class="pro1-card">
-        <div class="pro1-card-img"> 
-          <a href="https://dapper-muffin-c08291.netlify.app/"><img src="./image/todo.png" alt=""> </a>
+        <div class="pro1-card">
+          <div class="pro1-card-img">
+            <a href="https://dapper-muffin-c08291.netlify.app/"
+              ><img src="./image/todo.png" alt="" />
+            </a>
+          </div>
+          <h2>Todo List</h2>
         </div>
-        <h2> Todo List
-        </h2>
       </div>
-    </div>
-      </section>
-     
+    </section>
+
     <!-- ------------------------footer/contact section------------------------ -->
     <footer id="contact">
       <div class="foots">
@@ -185,19 +188,16 @@
                   <!-- <p>Linkedin</p> -->
                 </div>
                 <div class="email">
-                  <a href="mailto: temiladekolawole008@gmail.com"
-                    ><i class="fa brands soc fa-envelope"></i
-                  ></a>
+                  <a href="mailto: temiladekolawole008@gmail.com">
+                    <i class="fa brands soc fa-envelope"></i>
+                  </a>
                 </div>
               </div>
               <div class="cv">
                 <p>hire me</p>
-             <a href="./Temiladecv download.pdf" target="_blank">
-                <button>
-                  download cv
-                </button>
-              </a>
-              </div>
+                <a href="./Temiladecv download.pdf" download target="_blank">
+                  <button>download cv</button>
+                </a>
               </div>
             </div>
           </div>
@@ -208,23 +208,24 @@
             <form action="https://formspree.io/f/xjvnygae" method="POST">
               <div class="int">
                 <i class="fa-solid gets fa-user"></i>
-                <input type="text" placeholder="name" name="name" />
+                <input type="name" placeholder="name" name="name" required />
               </div>
 
               <div class="int">
                 <i class="fa-solid gets fa-envelope"></i>
-                <input type="text" placeholder="email" name="email" />
+                <input type="email" placeholder="email" name="email" required />
               </div>
-             <div class="int">
-              <i class="fa-solid gets fa-comment-dots"></i>
-              <textarea
-                name="message"
-                id="message"
-                cols="49"
-                rows="3"
-                placeholder="message"
-              ></textarea>
-             </div>
+              <div class="int">
+                <i class="fa-solid gets fa-comment-dots"></i>
+                <textarea
+                required
+                  name="message"
+                  id="message"
+                  cols="49"
+                  rows="3"
+                  placeholder="message"
+                ></textarea>
+              </div>
               <div class="get-btn">
                 <button type="submit">send</button>
               </div>
@@ -239,7 +240,6 @@
           <span id="currentYear"></span>
         </p>
       </div>
-      <!-- i want to use javascript for this copyright thing here. -->
     </footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="index.js"></script>

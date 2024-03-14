@@ -1,17 +1,33 @@
 :root {
   --header: rgba(2, 15, 56, 0.97);
 }
+@media (max-width:1100px) {
+  .abt-img{
+    width: 100%;
+  }
+  .logo h1{
+    padding: 0 30px;
+  }
+  header nav ul {
+    gap: 50px;
+  }
+}
 
 @media (max-width: 870px) {
   header {
     justify-content: space-between;
   }
+
   header nav ul{
-    gap: 50px;
+    gap: 25px;
   }
+ 
  
   .pro1-card > h2 > a{
     font-size: 25px;
+  }
+  .abt-img{
+    width: 100%;
   }
 }
 
@@ -39,6 +55,10 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+  header nav ul{
+    margin-top: 10%;
+    gap: 50px;
   }
   header nav ul li a {
     color: white;
@@ -77,8 +97,13 @@
   }
   #abt-sec img {
     width: 60%;
-    border: 3px solid brown;
     aspect-ratio: 1/1;
+  }
+  .abt-img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .about {
     width: 100%;
@@ -98,6 +123,13 @@
   .abt-btn button {
     padding: 10px 35px;
   }
+  #skills-sec h2{
+    font-size: 25px;
+  }
+  /* -----project section---- */
+  #project h1{
+    font-size: 25px;
+  }
   .pro1-card h2{
     font-size: 25px;
   }
@@ -115,6 +147,9 @@
     display: flex;
     width: 100%;
     gap: 10px;
+  }
+  .cv p{
+    font-size: 20px;
   }
   .copyright {
     font-size: 18px;
@@ -199,6 +234,13 @@
   .con-socials {
     align-items: center;
     justify-content: center;
+  }
+  .cv{
+    align-items: center;
+    justify-content: center;
+  }
+  .cv p{
+    font-size: 18px;
   }
   .get-in-touch-sec{
     width: 100%;
