@@ -1,28 +1,34 @@
-const navEl = document.querySelector('header nav');
-const headerEl = document.querySelector('header nav');
-const hamEl = document.querySelector('#ham');
-const iconEl = document.querySelector('#icon');
+const navEl = document.querySelector('.header1 .nav1')
+const headerEl = document.querySelector('.header1 .nav1')
+const hamEl = document.querySelector('#ham')
+const iconEl = document.querySelector('#icon')
 
-hamEl.addEventListener('click', () => { 
-  navEl.style.display = 'block'
-  hamEl.style.display = 'none';
-  iconEl.style.display = 'block';
-  console.log(iconEl)
-}
-)
-headerEl.addEventListener('click', () => {
-  navEl.style.display = 'none'
-  hamEl.style.display = 'block';
-  iconEl.style.display = 'none';
+document.querySelectorAll('.nav1 ul li a').forEach(n => n.addEventListener('click', () =>{
+hamEl.classList.add('hide');
+iconEl.classList.add('hide');
+}))
+
+hamEl.addEventListener('click', () =>{
+  hamEl.classList.toggle('hide');
+  iconEl.classList.toggle('hide');
 })
-iconEl.addEventListener('click', () => { 
-  navEl.style.display = 'none'
-  hamEl.style.display = 'block';
-  iconEl.style.display = 'none';
-  console.log(iconEl)
-}
 
-)
+// hamEl.addEventListener('click', () => { 
+//   navEl.style.display = 'block'
+//   hamEl.style.display = 'none';
+//   iconEl.style.display = 'block';
+//   console.log(iconEl)
+// }
+
+// )
+// iconEl.addEventListener('click', () => { 
+//   navEl.style.display = 'none'
+//   hamEl.style.display = 'block';
+//   iconEl.style.display = 'none';
+//   console.log(iconEl)
+// }
+
+// )
 document.addEventListener("DOMContentLoaded", function() {
   const currentYear = new Date().getFullYear();
 
@@ -44,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
           top: targetElement.offsetTop - 70, 
           behavior: 'smooth'
         });
-        document.querySelector('header nav').style.display = 'none';
+        document.querySelector('.header1 .nav1 ul li a').style.display = 'none';
       }
     });
   });

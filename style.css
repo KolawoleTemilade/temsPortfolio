@@ -48,7 +48,7 @@ header {
   right: 0;
   z-index: 999;
 }
-.logo > h1 {
+.logo > h1, .logo1 h1 {
   font-size: 32px;
   color: rgb(102, 157, 196);
 }
@@ -86,6 +86,13 @@ header > nav > ul > li > a {
 }
 #icon:hover {
   background-color: rgba(170, 165, 165, 0.571);
+}
+/* ----hambugger css */
+.header1{
+  display: none;
+}
+.header1 .logo1{
+  display: none;
 }
 /* ---------------profile section----------------- */
 .pro-sec {
@@ -187,7 +194,7 @@ header > nav > ul > li > a {
   background-color: rgba(45, 66, 105, 0.947);
 }
 #skills-sec > h2 {
-  font-size: 40px;
+  font-size: 4opx;
   color: white;
 }
 .skills {
