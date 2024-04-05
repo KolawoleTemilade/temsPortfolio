@@ -1,34 +1,26 @@
-const navEl = document.querySelector('.header1 .nav1')
-const headerEl = document.querySelector('.header1 .nav1')
-const hamEl = document.querySelector('#ham')
-const iconEl = document.querySelector('#icon')
+const mainMenu = document.querySelector('.main-menu')
+const menuLinks = document.querySelectorAll('.main-menu a')
+const iconEl = document.querySelector('.icon')
+const hamEl = document.querySelector('.ham')
 
-document.querySelectorAll('.nav1 ul li a').forEach(n => n.addEventListener('click', () =>{
-hamEl.classList.add('hide');
-iconEl.classList.add('hide');
-}))
-
-hamEl.addEventListener('click', () =>{
-  hamEl.classList.toggle('hide');
-  iconEl.classList.toggle('hide');
+menuLinks.forEach((link) => {
+    link.addEventListener('click', close)
 })
 
-// hamEl.addEventListener('click', () => { 
-//   navEl.style.display = 'block'
-//   hamEl.style.display = 'none';
-//   iconEl.style.display = 'block';
-//   console.log(iconEl)
-// }
+hamEl.addEventListener('click', show);
+iconEl.addEventListener('click', close);
 
-// )
-// iconEl.addEventListener('click', () => { 
-//   navEl.style.display = 'none'
-//   hamEl.style.display = 'block';
-//   iconEl.style.display = 'none';
-//   console.log(iconEl)
-// }
+function show() {
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
 
-// )
+}
+function close() {
+    mainMenu.style.top = '-100%';
+}
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
   const currentYear = new Date().getFullYear();
 

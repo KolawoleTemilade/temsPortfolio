@@ -40,7 +40,6 @@ header {
   justify-content: space-around;
   border: 1px solid transparent;
   border-radius: 5px;
-  border-bottom: 2px solid transparent;
   background-color: var(--header);
   position: fixed;
   top: 0;
@@ -63,7 +62,7 @@ header > nav > ul > li > a {
   padding: 20px;
 }
 
-#ham {
+.ham {
   border: 1px solid black;
   background-color: rgba(128, 128, 128, 0.591);
   display: none;
@@ -74,7 +73,7 @@ header > nav > ul > li > a {
   border-radius: 5px;
 }
 
-#icon {
+.icon {
   font-size: 30px;
   color: brown;
   margin-top: 10px;
@@ -84,7 +83,7 @@ header > nav > ul > li > a {
   background-color: rgba(255, 255, 255, 0.842);
   padding: 3px 7px;
 }
-#icon:hover {
+.icon:hover {
   background-color: rgba(170, 165, 165, 0.571);
 }
 /* ----hambugger css */

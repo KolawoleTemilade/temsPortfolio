@@ -32,41 +32,41 @@
 }
 
 @media (max-width: 768px) {
+
   header {
     justify-content: space-between;
     padding: 0 50px;
   }
-  header > nav {
-    display: none;
-  }
-  #ham {
-    display: block;
-  }
- .hide{
-  display: flex;
- }
-  .header1 .nav1 {
+ 
+  .main-menu{
     position: fixed;
-    top: 70px;
-    height: 100vh;
+    height: 50vh;
+    top: 0;
     right: 0;
-    width: 100%;
-    background-color: var(--header);
-    transition: all 0.6s ease-in-out;
-  }
-  .nav1 ul {
-    width: 100%;
-    display: flex;
+    left: 0;
     flex-direction: column;
-  }
-  .header1 .nav1 ul{
-    margin-top: 5%;
-    gap: 50px;
-  }
-  .header1 .nav1 ul li a {
-    color: white;
-    border-bottom: 2px solid white;
-  }
+    z-index: 999;
+    padding-top: 40px;
+    align-items: center;
+    background-color: rgb(8, 8, 40);
+    transition: top 1s ease;
+    display: none;
+}
+.main-menu .icon{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.ham{
+    display: block;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+}
+  /* 
+
   /* ----profile section----- */
   .pro-sec {
       gap: 40px;
