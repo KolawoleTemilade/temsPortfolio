@@ -11,6 +11,16 @@
   header nav ul {
     gap: 50px;
   }
+  .get-btn{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  
+  }
+  .get-btn button{
+     width: 100%;
+     padding: 15px;
+  }
 }
 
 @media (max-width: 870px) {
@@ -21,7 +31,6 @@
   header nav ul{
     gap: 25px;
   }
- 
  
   .pro1-card > h2 > a{
     font-size: 25px;
@@ -52,6 +61,7 @@
     transition: top 1s ease;
     display: none;
 }
+
 .main-menu .icon{
     display: block;
     position: absolute;
@@ -130,10 +140,10 @@
     font-size: 25px;
   }
   /* -----project section---- */
-  #project h1{
-    font-size: 25px;
+  #project h2{
+    font-size: 28px;
   }
-  .pro1-card h2{
+  .pro1-card h3{
     font-size: 25px;
   }
   .foots {
@@ -151,6 +161,7 @@
     width: 100%;
     gap: 10px;
   }
+  
   .cv p{
     font-size: 20px;
   }
@@ -205,12 +216,13 @@
     padding: 8px 50px;
     font-size: 18px;
   }
-  #project-sec h1 {
-    font-size: 23px;
-  }
-  
-  .pro1-card h2{
+
+ 
+  .pro1-card h3{
     font-size: 18px;
+  }
+  .pro1-card-img img{
+ width: 100%;
   }
  #contact{
     padding: 20px;
@@ -252,7 +264,7 @@
   }
   .get-in-add{
     width: 100%;
-    border: 4px solid;
+   
   }
   .copyright {
     font-size: 16px;
