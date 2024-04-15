@@ -7,6 +7,7 @@
   }
   .logo h1{
     padding: 0 30px;
+   
   }
   header nav ul {
     gap: 50px;
@@ -44,9 +45,8 @@
 
   header {
     justify-content: space-between;
-    padding: 0 50px;
+    /* padding: 0 50px; */
   }
- 
   .main-menu{
     position: fixed;
     height: 50vh;
@@ -80,6 +80,7 @@
   /* ----profile section----- */
   .pro-sec {
       gap: 40px;
+      padding: 5%;
   }
   .profile {
     width: 90%;
@@ -92,10 +93,14 @@
     align-items: center;
     justify-content: center;
   }
+  .profile> h1{
+    font-size: 40px;
+  }
   .pro-img > img {
     border: 2px solid white;
     border-radius: 50%;
-    height: 50vh;
+    padding-top: 4%;
+    /* height: 50vh; */
     width: 100%;
     margin-top: 10%;
     background-color: rgba(168, 123, 67, 0.192);
@@ -139,6 +144,9 @@
   #skills-sec h2{
     font-size: 25px;
   }
+  .skills{
+    justify-content: center;
+  }
   /* -----project section---- */
   #project h2{
     font-size: 28px;
@@ -173,6 +181,7 @@
 @media (max-width: 480px) {
   header {
     height: 60px;
+   
   }
   .pro-sec{
     gap: 10px;
@@ -201,10 +210,6 @@
   }
   .skills-sec h2 {
     font-size: 28px;
-  }
-  .skills {
-    display: flex;
-    flex-direction: column;
   }
   .skills p {
     font-size: 18px;
