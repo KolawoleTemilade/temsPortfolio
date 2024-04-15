@@ -149,8 +149,7 @@ header > nav > ul > li > a {
   width: 60%;
 }
 #abt-sec img {
-  height: 50vh;
- 
+  /* height: 50vh; */
   border: 1px solid transparent;
   border-radius: 20%;
   aspect-ratio: 1.5/ 1;

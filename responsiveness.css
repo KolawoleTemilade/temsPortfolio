@@ -98,7 +98,7 @@
   }
   .pro-img > img {
     border: 2px solid white;
-    border-radius: 50%;
+    border-radius: 100%;
     padding-top: 4%;
     /* height: 50vh; */
     width: 100%;
@@ -114,7 +114,7 @@
     width: 100%;
   }
   #abt-sec img {
-    width: 60%;
+    width: 80%;
     aspect-ratio: 1/1;
   }
   .abt-img{
@@ -191,6 +191,7 @@
   .pro-img{
     width: 100%;
   }
+
   .profile h1 {
     font-size: 25px;
   }
@@ -198,6 +199,7 @@
   .soc {
     font-size: 13px;
   }
+  
   .about h2 {
     font-size: 28px;
   }
